@@ -6,15 +6,14 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    private static final String URL =
-            "jdbc:mysql://localhost:3306/royaltaste"
-            + "?useSSL=false"
-            + "&allowPublicKeyRetrieval=true"
-            + "&serverTimezone=UTC";
+	private static final String URL =
+	        "jdbc:mysql://sakura.proxy.rlwy.net:51674/royaltaste"
+	        + "?useSSL=true"
+	        + "&allowPublicKeyRetrieval=true"
+	        + "&serverTimezone=UTC";
 
-    private static final String USER = "root";
-
-    private static final String PASSWORD = "Gowtham2002/28.S";
+	private static final String USER = "root";
+	private static final String PASSWORD = System.getenv("hTSJFspXsXjeHNzBreCvspaUrjSkFOXb");
 
     static {
 
